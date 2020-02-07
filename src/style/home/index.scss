@@ -1,0 +1,116 @@
+#home{
+    width: 100%;
+    .home_top{
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+        height: 1.08rem;
+        background: #f6f6f6;
+        padding: .18rem .36rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .home_position{
+            display: flex;
+            align-items: center;
+            width: 1.04rem;
+            height: .84rem;
+            .home_position_text{
+                i{
+                    font-size: 18px;
+                }
+            }
+            .home_position_icon{
+                span{
+                    font-size: 12px;
+                    margin-left: .08rem;
+                }
+            }
+        }
+        .home_search{
+            flex: 1;
+            margin-left: .36rem;
+            position: relative;
+            input{
+                width: 100%;
+                outline:none; 
+                height: .78rem;
+                border: 1px solid #ccc;
+                border-radius: .2rem;
+                text-indent: .64rem;
+                font-size: .32rem;
+            }
+            i{
+                position: absolute;
+                font-size: .5rem;
+                left: .14rem;
+                top: .12rem;
+            }   
+        }
+    }
+    .home_movies{
+        border-bottom: 1px solid #ccc;
+        padding:0 .36rem;
+        .home_movies_hot{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: .8rem;
+            p{
+                font-size: .32rem;
+                color: #ff5f16;
+            }
+            i{
+                font-size: .4rem;
+            }
+        }
+        .home_movies_dis{
+            width: 100%;
+            position: relative;
+            
+            .home_movies_text{
+                display: flex;
+                border-top: 1px solid #ccc;
+                padding: .18rem 0;
+                .home_movies_dis_img{
+                    img{
+                        width: 1.56rem;
+                        height: 2.36rem;
+                    }
+                }
+                .home_movies_details{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin-left: .24rem;
+                    font-size: 14px;
+                    h3{
+                        font-size: 18px;
+                    }
+                    
+                    .home_movies_scr{
+                        i{
+                            border: 1px solid #ccc;
+                            border-radius: .1rem;
+                            font-size: .24rem;
+                            padding: .06rem;
+                            color: yellowgreen;
+                        }
+                    }
+                }
+                .home_buyMovies{
+                    position: absolute;
+                    right: 0;
+                    width: 1.24rem;
+                    height: .66rem;
+                    margin-top: .9rem;
+                    background-color: #ff5f16;
+                    border-radius: .1rem;
+                    color: white;
+                    text-align: center;
+                    line-height: .66rem;
+                }
+            }
+        }
+    }
+    
+}

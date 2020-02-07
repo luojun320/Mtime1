@@ -1,0 +1,13 @@
+<div class="goods">
+    <%for(var i=0;i<goods.goodsList.length;i++){%>
+        <div class="goods_list">
+            <img src=<%-goods.goodsList[i].image%>>
+            <div>
+                <span><%-goods.goodsList[i].goodsTip%></span>
+                <%-goods.goodsList[i].name%>
+            </div>
+            <b>￥<%-(goods.goodsList[i].minSalePrice/100).toFixed(2)%></b>
+            <i><%-goods.goodsList[i].iconText%></i>
+        </div>
+    <%}%>
+</div>

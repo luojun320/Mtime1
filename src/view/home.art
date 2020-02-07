@@ -1,0 +1,42 @@
+<div id="home">
+    <div class="home_top">
+        <div class="home_position">
+            <div class="home_position_text">
+                <i>北京</i>
+            </div>
+            <div class="home_position_icon">
+                <span class="iconfont">&#xe60a;</span>
+            </div>
+        </div>
+        <div class="home_search">
+            <input type="text" placeholder="影片/影院/演员，任你搜">
+            <i class="iconfont">&#xe60b;</i>
+        </div>
+    </div>
+    <div class="home_movies">
+        <div class="home_movies_hot">
+            <p>正在热映<p>
+            <i class="iconfont">&#xe60f;</i>
+        </div>
+        <div class="home_movies_dis">
+            <%for(var i=0;i<data.ms.length;i++){%>
+                <div class="home_movies_text">
+                    <div class="home_movies_dis_img">
+                        <img src=<%-data.ms[i].img%>>
+                    </div>
+                    <div class="home_movies_details">
+                        <h3><%-data.ms[i].t%></h3>
+                        <div class="home_movies_auth">主演：<%-data.ms[i].aN1%> <%-data.ms[i].aN2%></div>
+                        <div class="home_movies_scr">
+                        <i><%-data.ms[i].versions[1].version%></i>
+                        <i><%-data.ms[i].versions[2].version%></i>
+                        </div>
+                        <div><%-data.ms[i].NearestCinemaCount%>家影院上映<%-data.ms[i].NearestShowtimeCount%>场</div>
+                    </div>
+                    <div class="home_buyMovies">购票</div>
+                </div>
+            <%}%>
+        </div>
+    </div>
+
+</div>

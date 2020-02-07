@@ -1,0 +1,51 @@
+.goods{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .goods_list{
+        position: relative;
+        background-color: white;
+        width: 3.7rem;
+        height: 5.12rem;
+        padding: 0 .24rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: .10rem;
+        img{
+            width: 100%;
+            height: 3.6rem;
+        }
+        div{
+            margin-top: .36rem;
+            span{
+                width: .56rem;
+                height: .32rem;
+                color: #ff8600;
+                border: 1px solid #ff8600;
+                border-radius: .1rem;
+                padding:0 0.04rem;
+                margin-right: .04rem;
+                margin-top: -4px;
+            }
+        }
+        b{
+            color: #ff8600;
+            font-size: .3rem;
+            font-weight: normal;
+            margin-bottom: .15rem;
+        }
+        i{
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #25ACBD;
+            text-align: center;
+            display: inline-block;
+            color: #fff;
+            width: .64rem;
+            height: .32rem;
+        }
+    }
+}

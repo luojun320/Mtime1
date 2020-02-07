@@ -1,0 +1,52 @@
+<div id="shopping">
+    <div class="shopping_search">
+        <input type="text" placeholder="搜索正版电影周边">
+        <span class="iconfont">&#xe60b;</span>
+        <i class="iconfont">&#xe612;</i>
+    </div>
+    <div class="banner">
+        <ul>
+            <%for(var i=0;i<data.scrollImg.length;i++){%>
+                <li>
+                    <img src=<%- data.scrollImg[i].image%>>
+                </li>
+            <%}%>
+        </ul>
+    </div>
+    <div class="nav">
+        <ul>
+            <%for(var i=0;i<data.navigatorIcon.length;i++){%>
+                <li>
+                    <img src=<%- data.navigatorIcon[i].image%>>
+                    <span><%-data.navigatorIcon[i].iconTitle%></span>
+                </li>
+            <%}%>
+        </ul>
+    </div>
+    <div class="details">
+        <%for(var i=0;i<data.category.length;i++){%>
+            <div class="details_all">
+                <div class="details_all_title">
+                    <span></span>
+                    <p><%-data.category[i].name%><p>
+                    <i class="iconfont">更多&#xe60f;</i>
+                </div>
+                <div class="details_img">
+                    <img src=<%-data.category[i].image%>>
+                <div>
+                <div class="details_icon">
+
+                    <%for(var j=0;j<data.category[i].subList.length;j++){%>
+                        <div class="details_icons">
+                            <img src=<%-data.category[i].subList[j].image%>>
+                            <span><%-data.category[i].subList[j].title%></span>
+                            <i>￥32元</i>
+                        </div>
+                    <%}%>
+                </div>
+            </div>
+        <%}%>
+    </div>
+    <div class="text"><p>---· 你可能感兴趣的 ·---</p></div> 
+    
+</div>

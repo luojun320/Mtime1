@@ -1,0 +1,16 @@
+<div id="header">
+    <div class="main-logo">
+        <img src="http://static1.mtime.cn/html5/20200116143308/images/2014/logo_mtime.png">
+    </div>
+    <ul class="header_item">
+        <%for(var i=0;i<data.length;i++){%>
+            <li>
+                
+                <span><%- data[i].text%></span>
+            </li>
+        <%}%>
+    </ul>
+    <div class="header_mine">
+        <i class="iconfont">&#xe62b;</i>
+    </div>
+</div>
